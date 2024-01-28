@@ -1579,7 +1579,7 @@ void AnnotatedCameraWidget::drawStatusBar(QPainter &p) {
   const QString roadName = roadNameUI ? QString::fromStdString(paramsMemory.get("RoadName")) : QString();
 
   QMap<int, QString> conditionalStatusMap = {
-    {0, "Conditional Volt Mode Ready"},
+    {0, "Chevy Volt 2017 Premier Ready"},
     {1, "Conditional Experimental overridden"},
     {2, "Experimental Mode manually activated"},
     {3, "Conditional Experimental overridden"},
