@@ -1169,8 +1169,8 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
 
   EventName.yourFrogTriedToKillMe: {
     ET.PERMANENT: Alert(
-      "Your frog tried to kill me...",
-      "👺",
+      "Warning...",
+      "",
       AlertStatus.frogpilot, AlertSize.mid,
       Priority.MID, VisualAlert.none, AudibleAlert.angry, 5.),
   },
