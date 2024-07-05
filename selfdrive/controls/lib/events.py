@@ -879,9 +879,9 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventName.accFaulted: {
-    ET.IMMEDIATE_DISABLE: ImmediateDisableAlert("Cruise Fault: Restart the Car"),
-    ET.PERMANENT: NormalPermanentAlert("Cruise Fault: Restart the car to engage"),
-    ET.NO_ENTRY: NoEntryAlert("Cruise Fault: Restart the Car"),
+    ET.IMMEDIATE_DISABLE: ImmediateDisableAlert("Please wait to start cruise control..."),
+    ET.PERMANENT: NormalPermanentAlert("Cruise Control: Restart the car to engage"),
+    ET.NO_ENTRY: NoEntryAlert("Please wait to start cruise control..."),
   },
 
   EventName.controlsMismatch: {
@@ -990,8 +990,8 @@ EVENTS: dict[int, dict[str, Alert | AlertCallbackType]] = {
   },
 
   EventName.lowSpeedLockout: {
-    ET.PERMANENT: NormalPermanentAlert("Cruise Fault: Restart the car to engage"),
-    ET.NO_ENTRY: NoEntryAlert("Cruise Fault: Restart the Car"),
+    ET.PERMANENT: NormalPermanentAlert("Please wait to start Cruise Control"),
+    ET.NO_ENTRY: NoEntryAlert("Please wait to start Cruise Control"),
   },
 
   EventName.lkasDisabled: {
